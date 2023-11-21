@@ -1,0 +1,16 @@
+2023-11-21 05:47:23:408 [Appium] Welcome to Appium v2.2.2 (REV e6ff51bba70f575e57282bd5b3fcacaa08530573)
+2023-11-21 05:47:23:411 [Appium] Non-default server args:
+2023-11-21 05:47:23:413 [Appium] {
+2023-11-21 05:47:23:414 [Appium]   allowInsecure: [
+2023-11-21 05:47:23:414 [Appium]     'chromedriver_autodownload'
+2023-11-21 05:47:23:414 [Appium]   ]
+2023-11-21 05:47:23:415 [Appium] }
+2023-11-21 05:47:23:415 [Appium] Attempting to load driver uiautomator2...
+2023-11-21 05:47:23:418 [Appium] Requiring driver at C:\Users\hp\.appium\node_modules\appium-uiautomator2-driver
+2023-11-21 05:47:26:880 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+2023-11-21 05:47:26:884 [Appium] You can provide the following URLs in your client code to connect to this server:
+2023-11-21 05:47:26:885 [Appium] 	http://192.168.149.183:4723/
+2023-11-21 05:47:26:885 [Appium] 	http://127.0.0.1:4723/ (only accessible from the same host)
+2023-11-21 05:47:26:885 [Appium] Available drivers:
+2023-11-21 05:47:26:886 [Appium]   - uiautomator2@2.34.1 (automationName 'UiAutomator2')
+2023-11-21 05:47:26:886 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
