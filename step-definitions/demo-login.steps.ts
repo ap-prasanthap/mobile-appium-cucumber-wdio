@@ -1,14 +1,13 @@
-import { Given,  Then } from '@wdio/cucumber-framework';
-
+import { Given,  Then, When } from '@wdio/cucumber-framework';
 import LoginPage from '../pageobjects/demo-login.page';
 import AlertWiew from '../pageobjects/demo-alert.page';
 
-Given(/^I am on the (\w+) view$/, async (page) => {    
+Given(/^I am on the login view$/, async () => {    
     await LoginPage.btnLogin.click();
 });
 
-Given(/^I login with (.*) and (.*)$/, async (username, password) => {
-    await LoginPage.btnLogin.click();
+When(/^I login with (.*) and (.*)$/, async (username, password) => {
+    // await LoginPage.btnLogin.click();
     await LoginPage.login(username, password)
 });
 
