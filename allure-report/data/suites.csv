@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Nov 23 12:13:40 IST 2023","Thu Nov 23 12:13:44 IST 2023","3364","","WDIO Android sample app: As a user, I can log into the wdio app","","","","Then I should see a flash message saying You are logged in!",""
+"passed","Thu Nov 23 12:13:32 IST 2023","Thu Nov 23 12:13:34 IST 2023","2136","","WDIO Android sample app: As a user, I can log into the wdio app","","","","Given I am on the login view",""
+"passed","Thu Nov 23 12:13:44 IST 2023","Thu Nov 23 12:13:44 IST 2023","2","","WDIO Android sample app: As a user, I can log into the wdio app","","","","",""
+"passed","Thu Nov 23 12:13:34 IST 2023","Thu Nov 23 12:13:40 IST 2023","6156","","WDIO Android sample app: As a user, I can log into the wdio app","","","","When I login with tomsmith@unmail.com and SuperSecretPassword!",""

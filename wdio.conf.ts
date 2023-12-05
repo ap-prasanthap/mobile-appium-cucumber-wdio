@@ -39,7 +39,11 @@ export const config: Options.Testrunner = {
     connectionRetryCount: 3,
     services: ['appium'],
     framework: 'cucumber',
-    reporters: ['spec'],
+    reporters:  ['spec',['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: false,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
     cucumberOpts: {        
         require: ['./step-definitions/demo-login.steps.ts'],
         backtrace: false,
@@ -53,4 +57,5 @@ export const config: Options.Testrunner = {
         timeout: 60000,
         ignoreUndefinedDefinitions: false
     },
+    
 }

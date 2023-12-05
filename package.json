@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@wdio/allure-reporter": "^8.24.0",
     "@wdio/appium-service": "^8.23.1",
     "@wdio/cli": "^8.23.1",
     "@wdio/cucumber-framework": "^8.23.1",
@@ -16,6 +17,7 @@
     "wdio": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
+    "allure-commandline": "^2.24.1",
     "selenium": "^2.20.0"
   },
   "keywords": [

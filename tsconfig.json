@@ -27,5 +27,8 @@
     "include": [
         "test",
         "wdio.conf.ts"
-    ]
+    ],
+    "env": { 
+    "allureResultsPath": "allure-results",
+  },
 }
