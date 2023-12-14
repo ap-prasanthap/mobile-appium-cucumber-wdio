@@ -10,7 +10,6 @@ export const config: Options.Testrunner = {
             transpileOnly: true
         }
     },
-    
     port: 4723,
     specs: [
         './features/**/demo-login.feature'
@@ -24,7 +23,7 @@ export const config: Options.Testrunner = {
         browserName: '',
         'appium:appPackage': 'com.wdiodemoapp',
         'appium:deviceName': 'emulator-5554',      
-        'appium:platformVersion': '11.0',
+        'appium:platformVersion': '14.0',
         'appium:automationName': 'UiAutomator2',
         'appium:app': join(process.cwd(), './apps/Android-NativeDemoApp-0.4.0.apk'),
         'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',       
