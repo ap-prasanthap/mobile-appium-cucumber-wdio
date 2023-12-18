@@ -13,7 +13,7 @@ export const config: Options.Testrunner = {
     
     port: 4723,
     specs: [
-        './features/**/demo-login.feature'
+        './features/**/myView-login.feature'
     ],
     
     exclude: [ ],
@@ -22,12 +22,12 @@ export const config: Options.Testrunner = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',        
         browserName: '',
-        'appium:appPackage': 'com.wdiodemoapp',
+        'appium:appPackage': 'com.zellis.myview.app',
         'appium:deviceName': 'emulator-5554',      
-        'appium:platformVersion': '11.0',
+        'appium:platformVersion': '14.0',
         'appium:automationName': 'UiAutomator2',
-        'appium:app': join(process.cwd(), './apps/Android-NativeDemoApp-0.4.0.apk'),
-        'appium:appWaitActivity': 'com.wdiodemoapp.MainActivity',       
+        'appium:app': join(process.cwd(), './apps/app-debug.apk'),
+        //'appium:appWaitActivity': 'com.zellis.myview.app',       
         
     }],
 
@@ -45,7 +45,7 @@ export const config: Options.Testrunner = {
         disableWebdriverScreenshotsReporting: false,
     }]],
     cucumberOpts: {        
-        require: ['./step-definitions/demo-login.steps.ts'],
+        require: ['./step-definitions/myView-login.steps.ts'],
         backtrace: false,
         requireModule: [],
         dryRun: false,
@@ -57,5 +57,10 @@ export const config: Options.Testrunner = {
         timeout: 60000,
         ignoreUndefinedDefinitions: false
     },
+    afterStep: async function (step, scenario, { error, duration, passed }, context) {
+        if (error) {
+          await browser.takeScreenshot();
+        }
+      }
     
 }

@@ -12,7 +12,8 @@
             "@wdio/globals/types",
             "expect-webdriverio",
             "@wdio/cucumber-framework",
-            "@wdio/appium-service"
+            "@wdio/appium-service",
+            "webdriverio/async",
         ],
         "skipLibCheck": true,
         "noEmit": true,

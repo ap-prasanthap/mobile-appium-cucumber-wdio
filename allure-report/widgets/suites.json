@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"f3970dfcd2c94abf879f4f25b4dec7b9","name":"WDIO Android sample app: As a user, I can log into the wdio app","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}}]}
+{"total":1,"items":[{"uid":"66aef2dc017e68a3fd68456895048975","name":"MyView app test: As a user, I can log into the myView app","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}}]}
